@@ -130,7 +130,7 @@ xxy=aggregate(steps~interval,data=df,mean,na.rm=T)
 plot(xxy$interval,xxy$steps,type="l",xlab="interval",ylab="Average daily steps")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
 
 2 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -199,7 +199,7 @@ steps2=aggregate(steps~date,data=df2,sum)
 hist(steps2[,2],main="Frequency of steps per day",xlab="Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
 Before
 
 ```r
@@ -254,6 +254,6 @@ weeks=aggregate(steps~week+interval,data=df2,mean)
 ggplot(weeks,aes(x=interval,y=steps))+geom_line()+facet_grid(week~.)
 ```
 
-![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-14](PA1_template_files/figure-html/unnamed-chunk-14-1.png) 
 
 End of the assignment. Thank you for your time. :)
