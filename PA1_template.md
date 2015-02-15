@@ -106,7 +106,7 @@ steps
 hist(steps[,2],main="Frequency of steps per day",xlab="Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 3 - Calculate and report the mean and median of the total number of steps taken per day
 
@@ -233,7 +233,7 @@ Warning: this code was developed in a computer set up for the language "portugue
 
 ```r
 for (i in 1:length(df2$time)){
-  if (weekdays(df2$time[i]) %in% c("s·bado","domingo")==TRUE) {df2$week[i]="weekend"}
+  if (weekdays(df2$time[i]) %in% c("s√°bado","domingo")==TRUE) {df2$week[i]="weekend"}
   else {df2$week[i]="weekday"}
 }
 table(df2$week)
